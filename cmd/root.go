@@ -13,7 +13,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "hashdir",
-	Short: "A utility that creates a list of hashes and tracks changes for a directory",
+	Short: "A utility that creates a list of file hashes and tracks changes for a directory",
 }
 
 func Execute() {
@@ -35,4 +35,3 @@ func hashFunc(path string) (string, error) {
 	}
 	return hex.EncodeToString(h.Sum(nil)), nil
 }
-
