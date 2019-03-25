@@ -1,9 +1,7 @@
 package main
 
-import "hashdir/cmd"
+import "github.com/Oniestel/hashdir/cmd"
 
-func main()  {
+func main() {
 	cmd.Execute()
 }
-
-
